@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,9 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-JN-nA1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="IeI-lH-aoi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gnR-UT-3Im"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book" translatesAutoresizingMaskIntoConstraints="NO" id="74z-uI-wrZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wd9-dS-8O6"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iTh-JN-nA1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3vH-iC-XVP"/>
+                            <constraint firstItem="74z-uI-wrZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8mA-Am-v4V"/>
+                            <constraint firstItem="74z-uI-wrZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DTu-2B-jrt"/>
+                            <constraint firstItem="iTh-JN-nA1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GWF-gc-Bxa"/>
+                            <constraint firstItem="iTh-JN-nA1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LPx-Bu-Obd"/>
+                            <constraint firstItem="74z-uI-wrZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NCp-Ql-LrL"/>
+                            <constraint firstItem="iTh-JN-nA1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RUx-wl-GJJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="74z-uI-wrZ" id="1tz-f9-UWQ"/>
+                        <outlet property="tableView" destination="iTh-JN-nA1" id="4gc-hX-ajT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
