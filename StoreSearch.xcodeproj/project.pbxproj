@@ -15,6 +15,8 @@
 		B615E2902B881A8C00042B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B615E28E2B881A8C00042B0C /* LaunchScreen.storyboard */; };
 		B615E2982B8825C000042B0C /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E2972B8825C000042B0C /* SearchResult.swift */; };
 		B615E29A2B8A14CA00042B0C /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B615E2992B8A14CA00042B0C /* SearchResultCell.xib */; };
+		B615E29C2B8A1E8A00042B0C /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615E29B2B8A1E8A00042B0C /* SearchResultCell.swift */; };
+		B615E29E2B8A226500042B0C /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B615E29D2B8A226500042B0C /* NothingFoundCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B615E2912B881A8C00042B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B615E2972B8825C000042B0C /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		B615E2992B8A14CA00042B0C /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		B615E29B2B8A1E8A00042B0C /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		B615E29D2B8A226500042B0C /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,10 @@
 				B615E28C2B881A8C00042B0C /* Assets.xcassets */,
 				B615E28E2B881A8C00042B0C /* LaunchScreen.storyboard */,
 				B615E2912B881A8C00042B0C /* Info.plist */,
+				B615E29B2B8A1E8A00042B0C /* SearchResultCell.swift */,
 				B615E2972B8825C000042B0C /* SearchResult.swift */,
 				B615E2992B8A14CA00042B0C /* SearchResultCell.xib */,
+				B615E29D2B8A226500042B0C /* NothingFoundCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				B615E2902B881A8C00042B0C /* LaunchScreen.storyboard in Resources */,
 				B615E28D2B881A8C00042B0C /* Assets.xcassets in Resources */,
 				B615E29A2B8A14CA00042B0C /* SearchResultCell.xib in Resources */,
+				B615E29E2B8A226500042B0C /* NothingFoundCell.xib in Resources */,
 				B615E28B2B881A8900042B0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +156,7 @@
 				B615E2842B881A8900042B0C /* AppDelegate.swift in Sources */,
 				B615E2982B8825C000042B0C /* SearchResult.swift in Sources */,
 				B615E2862B881A8900042B0C /* SceneDelegate.swift in Sources */,
+				B615E29C2B8A1E8A00042B0C /* SearchResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
