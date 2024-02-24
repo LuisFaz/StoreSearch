@@ -17,6 +17,10 @@ class SearchViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.contentInset = UIEdgeInsets(top: 47, left: 0, bottom: 0, right: 0)
+      
+      let cellNib = UINib(nibName: "SearchResultCell", bundle: nil)
+      tableView.register(cellNib, forCellReuseIdentifier:
+      "SearchResultCell")
   }
 }
 
@@ -61,15 +65,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     _ tableView: UITableView,
     cellForRowAt indexPath: IndexPath
   ) -> UITableViewCell {
-    let cellIdentifier = "SearchResultCell"
-
-    var cell: UITableViewCell! = tableView.dequeueReusableCell(
-      withIdentifier: cellIdentifier)
-    if cell == nil {
-      cell = UITableViewCell(
-        style: .subtitle, reuseIdentifier: cellIdentifier)
-    }
-    if searchResults.count == 0 {
+      let cellIdentifier = "SearchResultCell"
+      let cell = tableView.dequeueReusableCell(
+        withIdentifier: cellIdentifier,
+        for: indexPath)
+      
+      if searchResults.count == 0 {
       cell.textLabel!.text = "(Nothing found)"
       cell.detailTextLabel!.text = ""
     } else {
