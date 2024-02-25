@@ -67,14 +67,14 @@
 				B615E2832B881A8900042B0C /* AppDelegate.swift */,
 				B615E2852B881A8900042B0C /* SceneDelegate.swift */,
 				B615E2872B881A8900042B0C /* SearchViewController.swift */,
+				B615E29D2B8A226500042B0C /* NothingFoundCell.xib */,
 				B615E2892B881A8900042B0C /* Main.storyboard */,
 				B615E28C2B881A8C00042B0C /* Assets.xcassets */,
 				B615E28E2B881A8C00042B0C /* LaunchScreen.storyboard */,
 				B615E2912B881A8C00042B0C /* Info.plist */,
-				B615E29B2B8A1E8A00042B0C /* SearchResultCell.swift */,
 				B615E2972B8825C000042B0C /* SearchResult.swift */,
 				B615E2992B8A14CA00042B0C /* SearchResultCell.xib */,
-				B615E29D2B8A226500042B0C /* NothingFoundCell.xib */,
+				B615E29B2B8A1E8A00042B0C /* SearchResultCell.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
